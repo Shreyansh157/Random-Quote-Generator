@@ -1,0 +1,65 @@
+:root {
+  --bg1: #d6dae2; /* medium light gray */
+  --bg2: #6a93f5; /* slightly darker medium gray */
+  --accent: #6ea8fe;
+  --card-bg: rgba(255, 255, 255, 0.85);
+  --text: #ffffff; /* dark gray */
+  --muted: #c3c3c3;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--text);
+  /* background: linear-gradient(135deg, var(--bg1), var(--bg2)); */
+  /* background-attachment: fixed; */
+  background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1");
+  background-position: center;
+  background-size: cover;
+}
+.glass-card {
+  /* background: var(--card-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.quote-mark {
+  font-size: 3rem;
+  line-height: 1;
+  opacity: 0.35;
+}
+.quote-text {
+  font-size: clamp(1.4rem, 2vw + 0.7rem, 2rem);
+  font-weight: 600;
+}
+.quote-author {
+  color: var(--muted);
+  font-size: 1rem;
+}
+.btn-rounded {
+  border-radius: 999px;
+}
+.footer-text {
+  color: var(--text);
+}
+.fade-in {
+  animation: fadeIn 0.45s ease-in both;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px) scale(0.995);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
