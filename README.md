@@ -11,7 +11,7 @@ It displays inspirational quotes with the option to generate a new one, copy it 
 - 🔀 Avoids repeating the same quote consecutively
 
 ## 🚀 Live Demo
-[Click here to view live demo](link)  
+[Click here to view live demo](https://shreyansh157.github.io/Random-Quote-Generator/)  
 
 ## 🛠 Technologies Used
 - HTML5
